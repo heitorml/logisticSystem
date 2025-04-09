@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\3-Domain\Logistic.Delivery.Domain\Logistic.Delivery.Domain.csproj" />
     <ProjectReference Include="..\Logistic.CrossCutting\Logistic.Delivery.CrossCutting.csproj" />
-    <ProjectReference Include="..\Logistic.Delivery.Domain\Logistic.Delivery.Domain.csproj" />
   </ItemGroup>
 
 </Project>

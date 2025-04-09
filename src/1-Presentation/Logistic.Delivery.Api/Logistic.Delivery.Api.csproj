@@ -16,11 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Logistic.Delivery.Application\Logistic.Delivery.Application.csproj" />
+    <Folder Include="Controller\Delivery\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controller\Delivery\" />
+    <ProjectReference Include="..\..\2-Application\Logistic.Delivery.Application\Logistic.Delivery.Application.csproj" />
   </ItemGroup>
 
 </Project>

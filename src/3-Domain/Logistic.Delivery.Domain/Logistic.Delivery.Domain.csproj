@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Logistic.CrossCutting\Logistic.Delivery.CrossCutting.csproj" />
+    <ProjectReference Include="..\..\5-CrossCutting\Logistic.CrossCutting\Logistic.Delivery.CrossCutting.csproj" />
   </ItemGroup>
 
 </Project>

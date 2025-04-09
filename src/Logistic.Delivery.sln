@@ -13,23 +13,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Application", "02-Applic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Domain", "03-Domain", "{2D843E5C-2425-4A50-B479-6C770EAB56EB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Infra", "04-Infra", "{BFD87441-F746-427D-9F09-FAA1110BD2C4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Infrastructure", "04-Infra", "{BFD87441-F746-427D-9F09-FAA1110BD2C4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-CrossCutting", "05-CrossCutting", "{37C63D02-6950-422D-93A8-3C7B21F5B512}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.Domain", "Logistic.Delivery.Domain\Logistic.Delivery.Domain.csproj", "{4D21575D-5BE0-4CC5-95B5-3BBDC22F5FEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.Domain", "3-Domain\Logistic.Delivery.Domain\Logistic.Delivery.Domain.csproj", "{4D21575D-5BE0-4CC5-95B5-3BBDC22F5FEF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.Infra", "Logistic.Delivery.Infra\Logistic.Delivery.Infra.csproj", "{0522F1C3-ED97-42A6-8177-DA8B25BDC3B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.Infra", "4-Infrastructure\Logistic.Delivery.Infra\Logistic.Delivery.Infra.csproj", "{0522F1C3-ED97-42A6-8177-DA8B25BDC3B5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.Dto", "Logistic.Delivery.Dto\Logistic.Delivery.Dto.csproj", "{6D3C0540-8725-48FF-B056-BDE2B2A31BB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.Dto", "5-CrossCutting\Logistic.Delivery.Dto\Logistic.Delivery.Dto.csproj", "{6D3C0540-8725-48FF-B056-BDE2B2A31BB0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.CrossCutting", "Logistic.CrossCutting\Logistic.Delivery.CrossCutting.csproj", "{686E16DB-D9B1-461A-A988-E7E9B42670BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.CrossCutting", "5-CrossCutting\Logistic.CrossCutting\Logistic.Delivery.CrossCutting.csproj", "{686E16DB-D9B1-461A-A988-E7E9B42670BD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.Application", "Logistic.Delivery.Application\Logistic.Delivery.Application.csproj", "{E884E73B-FEDC-494D-A623-2306C2748A49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.Application", "2-Application\Logistic.Delivery.Application\Logistic.Delivery.Application.csproj", "{E884E73B-FEDC-494D-A623-2306C2748A49}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.Api", "Logistic.Delivery.Api\Logistic.Delivery.Api.csproj", "{59303A3A-D8E2-454D-B46D-7B3C71CC448F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.Api", "1-Presentation\Logistic.Delivery.Api\Logistic.Delivery.Api.csproj", "{59303A3A-D8E2-454D-B46D-7B3C71CC448F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.Create.Worker", "Logistic.Delivery.Create.Worker\Logistic.Delivery.Create.Worker.csproj", "{C1578C4E-B391-4DC1-8FA8-5C6DA7BFEC96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logistic.Delivery.Create.Worker", "1-Presentation\Logistic.Delivery.Create.Worker\Logistic.Delivery.Create.Worker.csproj", "{C1578C4E-B391-4DC1-8FA8-5C6DA7BFEC96}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConnectorLegacy", "ConnectorLegacy", "{59C0A5CB-05B4-4424-A2D3-EDA35EB75F97}"
 EndProject
@@ -38,9 +38,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistic.Delivery.Reprogram.Worker", "Logistic.Delivery.Reprogram.Worker\Logistic.Delivery.Reprogram.Worker.csproj", "{BAF887F4-9FC5-4076-9C6B-361F3434A8D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistic.Delivery.Reprogram.Worker", "1-Presentation\Logistic.Delivery.Reprogram.Worker\Logistic.Delivery.Reprogram.Worker.csproj", "{BAF887F4-9FC5-4076-9C6B-361F3434A8D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistic.Delivery.Cancell.Worker", "Logistic.Delivery.Cancell.Worker\Logistic.Delivery.Cancell.Worker.csproj", "{E2DCE52C-1D32-4906-908F-CEF2801B8909}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistic.Delivery.Cancell.Worker", "1-Presentation\Logistic.Delivery.Cancell.Worker\Logistic.Delivery.Cancell.Worker.csproj", "{E2DCE52C-1D32-4906-908F-CEF2801B8909}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
