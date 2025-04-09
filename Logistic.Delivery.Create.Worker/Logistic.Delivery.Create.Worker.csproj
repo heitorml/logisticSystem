@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Logistic.Delivery.Create.Worker-61bd0693-82d7-4436-8955-0ff4480f339f</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Database\Maps\**" />
+    <Compile Remove="Infra\**" />
+    <Content Remove="Database\Maps\**" />
+    <Content Remove="Infra\**" />
+    <EmbeddedResource Remove="Database\Maps\**" />
+    <EmbeddedResource Remove="Infra\**" />
+    <None Remove="Database\Maps\**" />
+    <None Remove="Infra\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Database\AppDbContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Database\Maps\DeliverySagaMap.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.3.6" />
+    <PackageReference Include="MassTransit.EntityFrameworkCore" Version="8.3.6" />
+    <PackageReference Include="MassTransit.MongoDb" Version="8.3.6" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.3.6" />
+    <PackageReference Include="MassTransit.SqlTransport.PostgreSQL" Version="8.3.6" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+    <PackageReference Include="MongoDB.Bson" Version="3.2.1" />
+    <PackageReference Include="MongoDB.Driver" Version="3.2.1" />
+    <PackageReference Include="Npgsql" Version="9.0.2" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Logistic.Delivery.Application\Logistic.Delivery.Application.csproj" />
+  </ItemGroup>
+</Project>

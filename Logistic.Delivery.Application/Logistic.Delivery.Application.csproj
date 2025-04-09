@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="UseCases\Delivery\Canceled\**" />
+    <Compile Remove="UseCases\Delivery\GetDeliveryByFilter\**" />
+    <Compile Remove="UseCases\Delivery\SetDeliveryStatus\**" />
+    <EmbeddedResource Remove="UseCases\Delivery\Canceled\**" />
+    <EmbeddedResource Remove="UseCases\Delivery\GetDeliveryByFilter\**" />
+    <EmbeddedResource Remove="UseCases\Delivery\SetDeliveryStatus\**" />
+    <None Remove="UseCases\Delivery\Canceled\**" />
+    <None Remove="UseCases\Delivery\GetDeliveryByFilter\**" />
+    <None Remove="UseCases\Delivery\SetDeliveryStatus\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Factories\" />
+    <Folder Include="Strategies\PricingZipCode\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ErrorOr" Version="2.0.1" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Logistic.CrossCutting\Logistic.Delivery.CrossCutting.csproj" />
+    <ProjectReference Include="..\Logistic.Delivery.Dto\Logistic.Delivery.Dto.csproj" />
+    <ProjectReference Include="..\Logistic.Delivery.Infra\Logistic.Delivery.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
